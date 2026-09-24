@@ -67,10 +67,9 @@ section{position:relative}
 .nav{position:fixed;inset:0 0 auto;z-index:50;transition:.4s;padding:1.1rem 0}
 .nav.scrolled{background:rgba(11,46,35,.88);backdrop-filter:blur(14px);padding:.6rem 0;box-shadow:0 10px 30px -15px rgba(0,0,0,.5)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.brand{display:flex;align-items:center;gap:.7rem;color:#fff}
-.brand svg{width:44px;height:44px}
-.brand b{font-family:var(--serif);font-weight:500;font-size:1.25rem;display:block;line-height:1}
-.brand small{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;opacity:.75}
+.brand{display:flex;align-items:center;line-height:0}
+.brand img{height:86px;width:auto;display:block;background:#fff;border-radius:12px;box-shadow:0 8px 22px -14px rgba(0,0,0,.7)}
+.nav.scrolled .brand img{height:64px}
 .nav ul{display:flex;gap:1.8rem;list-style:none}
 .nav ul a{color:rgba(255,255,255,.85);font-size:.92rem;position:relative;padding:.3rem 0}
 .nav ul a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--gold);transition:.3s}
@@ -362,6 +361,7 @@ section{position:relative}
 
 /* FOOTER */
 footer{background:#071f18;color:rgba(248,242,228,.7);padding:4rem 0 7rem;font-size:.9rem}
+footer .brand img{height:120px}
 .f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem}
 footer h5{font-family:var(--serif);color:var(--cream);font-size:1.1rem;font-weight:400;margin-bottom:.9rem}
 footer ul{list-style:none;display:grid;gap:.4rem}
@@ -651,8 +651,7 @@ footer a:hover{color:var(--gold)}
 <header class="nav" id="nav">
   <div class="wrap">
     <a href="#top" class="brand" aria-label="The Kingslayer Resort home">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="#d4a94f" stroke-width="1.5"/><path d="M14 40 L18 22 L26 32 L32 16 L38 32 L46 22 L50 40 Z" fill="#d4a94f"/><rect x="14" y="42" width="36" height="4" rx="1" fill="#d4a94f"/><circle cx="18" cy="21" r="2.2" fill="#f0cf83"/><circle cx="32" cy="15" r="2.4" fill="#f0cf83"/><circle cx="46" cy="21" r="2.2" fill="#f0cf83"/><path d="M32 46 C30 52 26 55 22 56 M32 46 C34 52 38 55 42 56" stroke="#6f9a62" stroke-width="1.6" fill="none"/></svg>
-      <span><b>The Kingslayer</b><small>Resort · Negombo</small></span>
+      <img src="img/logo.png" alt="The Kingslayer Resort">
     </a>
     <ul>
       <li><a href="#rooms">Rooms</a></li>
@@ -1095,8 +1094,7 @@ footer a:hover{color:var(--gold)}
     <div class="f-grid">
       <div>
         <a href="#top" class="brand" style="margin-bottom:1rem">
-          <svg viewBox="0 0 64 64" width="44" height="44"><circle cx="32" cy="32" r="30" fill="none" stroke="#d4a94f" stroke-width="1.5"/><path d="M14 40 L18 22 L26 32 L32 16 L38 32 L46 22 L50 40 Z" fill="#d4a94f"/><rect x="14" y="42" width="36" height="4" rx="1" fill="#d4a94f"/></svg>
-          <span><b>The Kingslayer</b><small>Resort · Negombo</small></span>
+          <img src="img/logo.png" alt="The Kingslayer Resort">
         </a>
         <p style="max-width:34ch">A family-run garden &amp; pool resort in Negombo, Sri Lanka, welcoming guests since 2022.</p>
         <div class="ota">
